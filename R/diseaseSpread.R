@@ -10,9 +10,6 @@
 #' @keywords network spread
 #' @examples
 #' diseasespread()
-#' @export
-#' @importFrom dplyr group_by summarise
-#' @export
 
 
 diseaseSpread <- function(mat, startnode, nodenum, p){
