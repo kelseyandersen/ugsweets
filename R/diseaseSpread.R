@@ -10,6 +10,7 @@
 #' @keywords network spread
 #' @examples
 #' diseasespread()
+#' @export
 #' @importFrom dplyr group_by summarise
 #' @importFrom tibble as_tibble
 #' @export
