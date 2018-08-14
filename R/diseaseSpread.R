@@ -42,7 +42,6 @@ diseaseSpread <- function(mat, startnode, nodenum, p){
     }
   }
   temp <- cbind(NodesNew,Sim, Step, Status)
-  temp <- as_tibble(temp)
   out <- temp %>%
     group_by(Sim, Step) %>%
     summarise(Number_of_Nodes = sum(Status))
