@@ -39,9 +39,6 @@ diseaseSpread <- function(mat, startnode, nodenum, p){
     }
   }
   temp <- cbind(NodesNew,Sim, Step, Status)
-  out <- temp %>%
-    group_by(Sim, Step) %>%
-    summarise(Number_of_Nodes = sum(Status))
-  return(out)
+  return(temp)
 }
 
