@@ -8,6 +8,7 @@
 #' @param nodenum total number of nodes in the network
 #' @param p probability of infection
 #' @keywords network spread
+#' @export
 #' @examples
 #' diseasespread()
 
