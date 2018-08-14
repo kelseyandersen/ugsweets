@@ -11,6 +11,7 @@
 #' @examples
 #' diseasespread()
 #' @importFrom dplyr group_by summarise as.tibble
+#' @importFrom tibble as_tibble
 #' @export
 
 
@@ -41,7 +42,7 @@ diseaseSpread <- function(mat, startnode, nodenum, p){
     }
   }
   temp <- cbind(NodesNew,Sim, Step, Status)
-  temp <- as.tibble(temp)
+  temp <- as_tibble(temp)
   out <- temp %>%
     group_by(Sim, Step) %>%
     summarise(Number_of_Nodes = sum(Status))
