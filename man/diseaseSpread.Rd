@@ -1,9 +1,7 @@
 \name{diseaseSpread}
 \alias{diseaseSpread}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{
-%%  ~~Disease spread in a network  ... ~~
-}
+\title{Something}
 \description{
 %%  ~~ Disease spread ~~
 }
